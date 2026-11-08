@@ -1,0 +1,20 @@
+{
+  "name": "llm-eval-harness",
+  "version": "0.1.0",
+  "description": "A tiny, dependency-free harness for asserting what an LLM endpoint must never do. Fixed prompts, plain checks, a pass rate and an exit code for CI. No LLM judge.",
+  "type": "module",
+  "main": "src/index.ts",
+  "license": "MIT",
+  "author": "Asad Baig",
+  "engines": { "node": ">=22.18" },
+  "scripts": {
+    "test": "node --test \"test/*.test.ts\"",
+    "typecheck": "tsc --noEmit",
+    "example": "node examples/run.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0"
+  },
+  "keywords": ["llm", "evals", "testing", "ci", "guardrails"]
+}
